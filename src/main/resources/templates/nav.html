@@ -1,0 +1,15 @@
+<th:block th:fragment="nav">
+    <nav>
+        <a href="/"><img alt="Logo" src="/image/gb_logo.jpeg" height="70px"></a>
+        <ul>
+            <li><a th:href="@{/member}">멤버</a></li>
+            <li><a href="#">게시글</a></li>
+            <li><a href="#">Dropdown Menu Item</a>
+                <ul>
+                    <li><a href="#">Sublink with a long name</a></li>
+                    <li><a href="#">Short sublink</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</th:block>

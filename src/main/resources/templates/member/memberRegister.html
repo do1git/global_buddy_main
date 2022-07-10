@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+
+
+    <th:block th:fragment="content">
+        <div>
+            <form>
+                <div>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw">
+                </div>
+                <div>
+                    <span>관리자여부</span>
+                    <div>
+                        <span for="admin--yes">예</span>
+                        <input type="radio" id="admin--yes" name="admin" value="true">
+                    </div>
+                    <div>
+                        <span for="admin--no">아니요</span>
+                        <input type="radio" id="admin--no" name="admin" value="false">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+        <script th:inline="javascript">
+
+        </script>
+    </th:block>
+</th:block>

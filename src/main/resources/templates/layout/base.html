@@ -1,0 +1,40 @@
+<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="setContent(content)">
+
+
+<head>
+    <link rel="icon" href="https://via.placeholder.com/70x70">
+    <link rel="stylesheet" th:href="@{/css/config/mvp.css}">
+
+    <meta charset="utf-8">
+    <meta name="description" content="GLOBAL BUDDY">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GLOBAL BUDDY MAIN</title>
+</head>
+
+<body>
+<header>
+    <th:block th:replace="nav.html"></th:block>
+<!--    <h1>Page Heading with <i>Italics</i> and <u>Underline</u></h1>-->
+<!--    <p>Page Subheading with <mark>highlighting</mark></p>-->
+<!--    <br>-->
+<!--    <p><a href="#"><i>Italic Link Button</i></a><a href="#"><b>Bold Link Button &rarr;</b></a></p>-->
+</header>
+<main>
+    <th:block th:replace="${content}"></th:block>
+</main>
+<footer>
+    <hr>
+    <p>
+        <small>Contact info</small>
+    </p>
+</footer>
+</body>
+
+</th:block>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="~{/layout/base :: setContent(~{this::content})}">
+
+
+    <th:block th:fragment="content">
+        <div>
+            <div class="buttonList--row__small">
+                <a href="/member/register">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>멤버추가</span>
+                </a>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">멤버 이름</th>
+                    <th scope="col">소속팀</th>
+                    <th scope="col">이메일</th>
+                </tr>
+                </thead>
+
+                <tbody>
+<!--                <tr th:each="dto : ${result.dtoList}">-->
+<!--                    <td><b>[[${dto.name}]]</b></td>-->
+<!--                    <td><b>[[${dto.team}]]</b></td>-->
+<!--                    <td><b>[[${dto.email}]]</b></td>-->
+<!--                </tr>-->
+                </tbody>
+            </table>
+        </div>
+
+        <script th:inline="javascript">
+
+        </script>
+    </th:block>
+</th:block>

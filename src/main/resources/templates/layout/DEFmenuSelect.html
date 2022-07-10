@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+
+
+    <th:block th:fragment="content">
+       <div>
+           <div><a href="/member">멤버</a></div>
+           <div><a href="/board">게시글</a></div>
+
+
+       </div>
+
+
+        <script th:inline="javascript">
+
+        </script>
+    </th:block>
+</th:block>
